@@ -31,6 +31,6 @@
         "webpack-cli": "^4.10.0"
     },
     "dependencies": {
-        "@toriyama/draw-julia": "^0.3.0"
+        "@toriyama/draw-julia": "^0.3.2"
     }
 }

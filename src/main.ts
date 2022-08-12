@@ -22,11 +22,12 @@ export class JuliaSetLayer extends L.GridLayer {
 		tile.width = tileSize.x
 		tile.height = tileSize.y
 		// 描画
+		let y = -coords.y
 		this.julia.draw(tile, {
-			north: 2.0,
-			south: -2.0,
-			west: -2.0,
-			east: 2.0
+			south: coords.y,
+			north: coords.y - 1,
+			west: coords.x,
+			east: coords.x + 1,
 		})
 		return tile
 	}
