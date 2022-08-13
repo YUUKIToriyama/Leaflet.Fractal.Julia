@@ -1,5 +1,8 @@
 # Leaflet.Fractal.Julia
 
+![npm](https://img.shields.io/npm/v/leaflet.fractal.julia)
+![GitHub last commit](https://img.shields.io/github/last-commit/YUUKIToriyama/Leaflet.Fractal.Julia)
+
 Display Julia Set on Leaflet.js
 
 ![julia set](https://i.imgur.com/Ju2UYH2.png)
@@ -11,6 +14,22 @@ Display Julia Set on Leaflet.js
 ジュリア集合の計算には WebAssembly を用いており、高速なレンダリング処理を可能にしています。
 
 ## Usage
+
+### Load from jsDelivr
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/leaflet.fractal.julia/dist/bundle.js"></script>
+```
+
+### via npm.js
+
+```terminal
+npm install leaflet.fractal.julia
+```
+
+## Example
+
+https://yuukitoriyama.github.io/Leaflet.Fractal.Julia/index.html
 
 ```html
 <html>
