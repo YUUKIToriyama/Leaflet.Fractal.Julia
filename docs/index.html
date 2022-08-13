@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <!-- Load Leaflet.Fractal.Julia -->
-    <script src="../dist/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fractal.julia/dist/bundle.js"></script>
     <!-- Initialize MathJax-->
     <script>
         MathJax = {
@@ -27,12 +27,20 @@
 <body>
     <header>
         <h1>Leaflet.Fractal.Julia</h1>
+        <p>
+            Available on
+            <a href="https://www.npmjs.com/package/leaflet.fractal.julia"><img src="https://img.shields.io/npm/v/leaflet.fractal.julia" alt="npm version" height="18"></a>
+            Source codes on
+            <a href="https://github.com/YUUKIToriyama/Leaflet.Fractal.Julia"><img src="https://img.shields.io/github/last-commit/YUUKIToriyama/Leaflet.Fractal.julia"></a>
+        </p>
+    </header>
+    <main>
         <p>$z_{n+1} = z_{n}^{2} + c$</p>
         <p>$c=$<input id="real" type="number" step="0.01" value="-0.15" />$+$<input id="imaginary" type="number" step="0.01" value="0.65" />$i$</p>
         <button id="display">Display</button>
-    </header>
-    <div id="viewer" style="width: 95vw; height: 90vh;"></div>
-    <script type="module" src="./main.js"></script>
+        <div id="viewer" style="width: 95vw; height: 90vh;"></div>
+        <script type="module" src="./main.js"></script>
+    </main>
     <footer>
         <p>© 2022 Yuuki Toriyama All rights reserved.</p>
     </footer>
