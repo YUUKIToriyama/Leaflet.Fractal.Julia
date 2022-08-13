@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(to bottom right, #eee, #ccc);
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+#viewer {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}

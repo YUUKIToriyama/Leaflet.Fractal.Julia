@@ -5,14 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo | Leaflet.Fractal.Julia</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Load Leaflet.js -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <!-- Load Leaflet.Fractal.Julia -->
     <script src="../dist/bundle.js"></script>
+    <!-- Initialize MathJax-->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$']
+                ]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
-    <div id="viewer"></div>
+    <header>
+        <h1>Leaflet.Fractal.Julia</h1>
+        <p>$z_{n+1} = z_{n}^{2} + c$</p>
+        <p>$c=$<input id="real" type="number" step="0.01" value="-0.15" />$+$<input id="imaginary" type="number" step="0.01" value="0.65" />$i$</p>
+        <button id="display">Display</button>
+    </header>
+    <div id="viewer" style="width: 95vw; height: 90vh;"></div>
     <script type="module" src="./main.js"></script>
+    <footer>
+        <p>© 2022 Yuuki Toriyama All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
