@@ -2,10 +2,12 @@
     "name": "leaflet.fractal.julia",
     "version": "0.0.1",
     "description": "Let's dive into fractal world with leaflet.js",
-    "main": "index.js",
+    "main": "./dist/bundle.js",
+    "types": "./dist/main.d.ts",
     "scripts": {
         "build": "tsc",
-        "build:web": "webpack --config webpack.config.ts"
+        "build:web": "webpack --config webpack.config.ts",
+        "prepublishOnly": "rm -rf ./dist && npm run build && npm run build:web"
     },
     "repository": {
         "type": "git",
@@ -13,7 +15,8 @@
     },
     "keywords": [
         "fractal",
-        "leaflet"
+        "leaflet",
+        "mathematics"
     ],
     "author": "YUUKIToriyama <github@toriyama.dev>",
     "license": "MIT",
