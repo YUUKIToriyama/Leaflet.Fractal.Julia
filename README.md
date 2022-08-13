@@ -38,6 +38,12 @@ Display Julia Set on Leaflet.js
 </html>
 ```
 
+## Gallery
+
+|           $-0.15 + 0.65i$            |         $0.11131 - 0.6289i$          |          $-0.4004 - 0.585i$          |
+| :----------------------------------: | :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/f5WjiVK.png) | ![](https://i.imgur.com/unUGUpV.png) | ![](https://i.imgur.com/YOLgUhd.png) |
+
 ## Related Project
 
 - https://github.com/IvanSanchez/Leaflet.MandelbrotGL
